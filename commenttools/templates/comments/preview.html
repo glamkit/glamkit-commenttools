@@ -1,0 +1,29 @@
+{% extends "comments/base.html" %}
+
+{% load comments %}
+
+{% block title %}Comment Preview{% endblock %}
+
+{% block content %}
+
+<h2>Preview your comment</h2>
+
+<form action="{% comment_form_target %}" method="POST">
+    {% csrf_token %}
+    {% if form.errors %}
+      <p><strong>Please correct the error{{ form.errors|pluralize }} below</strong></p>
+    {% else %}
+      <div class="comment">
+          <div class="text">{{ comment|escape|urlizetrunc:40|linebreaks }}</div>
+      </div>
+      <p>
+        and <input type="submit" name="submit" value="Post your comment" id="submit"> or make some changes below:
+      </p>
+    {% endif %}
+    {% include "comments/form_fields.html" %}
+    {% if next %}
+        <input type="hidden" name="next" value="{{ next }}" />
+    {% endif %}
+</form>
+
+{% endblock %}

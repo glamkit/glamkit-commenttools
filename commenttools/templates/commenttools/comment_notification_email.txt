@@ -1,0 +1,18 @@
+* Is public: {{ comment.is_public|yesno:"Yes,No" }}
+
+* Object title: {{ comment.content_object }}
+
+* Person's name: {{ comment.user_name }}
+
+* Comment:
+{{ comment.comment }}
+
+
+
+-------------------------------------
+
+To view on site:
+http://www.mysite.com{{ comment.get_absolute_url }}
+
+To delete:
+http://mysite.com/admin/comments/comment/{{ comment.pk }}/delete/
