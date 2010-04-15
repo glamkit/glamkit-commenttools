@@ -2,22 +2,28 @@
 
 {% load comments %}
 
-{% block title %}Comment Preview{% endblock %}
+{% load i18n %}
+
+{% block title %}{% trans "Comment Preview" %}{% endblock %}
 
 {% block content %}
 
-<h2>Preview your comment</h2>
+<h2>{% trans "Preview your comment" %}</h2>
 
 <form action="{% comment_form_target %}" method="POST">
     {% csrf_token %}
     {% if form.errors %}
-      <p><strong>Please correct the error{{ form.errors|pluralize }} below</strong></p>
+      <p>
+        <strong>
+        {% blocktrans count form.errors|length as form_errors %}Please correct the error below{% plural %}Please correct the errors below{% endblocktrans %}
+        </strong>
+      </p>
     {% else %}
       <div class="comment">
           <div class="text">{{ comment|escape|urlizetrunc:40|linebreaks }}</div>
       </div>
       <p>
-        and <input type="submit" name="submit" value="Post your comment" id="submit"> or make some changes below:
+        <input type="submit" name="submit" value="{% trans "Post your comment" %}" id="submit"> {% trans "or make some changes below" %}:
       </p>
     {% endif %}
     {% include "comments/form_fields.html" %}
