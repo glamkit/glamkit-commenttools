@@ -3,7 +3,10 @@ from setuptools import setup, find_packages
 setup(
     name='glamkit-commenttools',
     version='0.0.1',
+    author='Julien Phalip',
+    author_email='julien@interaction.net.au',
     description='Useful bits to spice up comments in your Django site.',
+    long_description=open('README.rst').read(),
     url='http://github.com/glamkit/glamkit-commenttools',
     packages=find_packages(),
     zip_safe=False,
