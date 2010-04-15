@@ -1,28 +1,29 @@
+    {% load i18n %}
     <p {% if form.name.errors %} class="error"{% endif %}>
         {% if form.name.errors %}{{ form.name.errors }}{% endif %}
-        {{ form.name }} <label for="id_name">Name (required)</label>
+        {{ form.name }} <label for="id_name">{% trans "Name (required)" %}</label>
     </p>
     <p {% if form.email.errors %} class="error"{% endif %}>
         {% if form.email.errors %}{{ form.email.errors }}{% endif %}
-        {{ form.email }} <label for="id_email">Email address (will never be published)</label>
+        {{ form.email }} <label for="id_email">{% trans "Email address (will never be published)" %}</label>
     </p>
     <p {% if form.url.errors %} class="error"{% endif %}>
         {% if form.url.errors %}{{ form.url.errors }}{% endif %}
-        {{ form.url }} <label for="id_url">URL</label>
+        {{ form.url }} <label for="id_url">{% trans "URL" %}</label>
     </p>
     <p {% if form.comment.errors %} class="error"{% endif %}>
-        <label for="id_comment">Comment:</label><br/>
+        <label for="id_comment">{% trans "Comment" %}:</label><br/>
         {% if form.comment.errors %}{{ form.comment.errors }}{% endif %}
         {{ form.comment }}
     </p>
     <p style="display:none;">
-        <label for="id_honeypot">If you enter anything in this field your comment will be treated as spam</label> <input type="text" name="honeypot" id="id_honeypot" />
+        <label for="id_honeypot">{% trans "If you enter anything in this field your comment will be treated as spam" %}</label> <input type="text" name="honeypot" id="id_honeypot" />
     </p>
     {{ form.content_type }}
     {{ form.object_pk }}
     {{ form.timestamp }}
     {{ form.security_hash }}
     <p class="submit">
-        <input type="submit" name="submit" class="submit-post" value="Post">
-        <input type="submit" name="preview" class="submit-preview" value="Preview">
+        <input type="submit" name="submit" class="submit-post" value="{% trans "Post" %}">
+        <input type="submit" name="preview" class="submit-preview" value="{% trans "Preview" %}">
     </p>
