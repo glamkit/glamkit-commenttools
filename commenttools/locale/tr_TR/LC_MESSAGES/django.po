@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <oktaysancak@gmail.com>, 2010.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-04-15 12:46+1000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Oktay Sancak <oktaysancak@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: templates/comments/form_fields.html:4
+msgid "Name (required)"
+msgstr "İsim (zorunlu)"
+
+#: templates/comments/form_fields.html:8
+msgid "Email address (will never be published)"
+msgstr "Eposta adresi (asla paylaşılmayacak)"
+
+#: templates/comments/form_fields.html:12
+msgid "URL"
+msgstr "URL"
+
+#: templates/comments/form_fields.html:15
+msgid "Comment"
+msgstr "Yorum"
+
+#: templates/comments/form_fields.html:20
+msgid ""
+"If you enter anything in this field your comment will be treated as spam"
+msgstr ""
+"Eğer bu alana herhangi bir şey girerseniz, yorumunuz spam olarak "
+"değerlendirilecektir"
+
+#: templates/comments/form_fields.html:27
+msgid "Post"
+msgstr "Gönder"
+
+#: templates/comments/form_fields.html:28
+#, fuzzy
+msgid "Preview"
+msgstr "Önizle"
+
+#: templates/comments/preview.html:7
+msgid "Comment Preview"
+msgstr "Yorum Önizleme"
+
+#: templates/comments/preview.html:11
+msgid "Preview your comment"
+msgstr "Yorumu taslak olarak görüntüle"
+
+#: templates/comments/preview.html:18
+msgid "Please correct the error below"
+msgid_plural "Please correct the errors below"
+msgstr[0] "Lütfen aşağıdaki hatayı düzeltin"
+msgstr[1] "Lütfen aşağıdaki hataları düzeltin"
+
+#: templates/comments/preview.html:26
+#, fuzzy
+msgid "Post your comment"
+msgstr "Yorumu taslak olarak görüntüle"
+
+#: templates/comments/preview.html:26
+msgid "or make some changes below"
+msgstr "yada aşağıda değişiklikler yapın"
