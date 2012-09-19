@@ -1,13 +1,6 @@
-====================
-Glamkit-commenttools
-====================
+This repository has a new location
+----------------------------------
 
-A tool for building user commenting apps. It is part of the `GLAMkit project <http://glamkit.org/>`_. For more information, see the `documentation <http://docs.glamkit.org/documentation/commenttools/>`_.
+``github.com/glamkit`` repositories have been deprecated in favour of the ixc forks. This repository is now at https://github.com/ixc/glamkit-commenttools.
 
-View a full list of `GLAMkit components <http://docs.glamkit.org/components/>`_.
-
-
-Dependencies:
-=============
-
-- glamkit-stopspam (only if use_akismet == True)
+Please update your pip requirements etc. to use the new fork.
